@@ -5,7 +5,7 @@ media_folder: "public/assets/blogs" # Media files will be stored in the repo und
 public_folder: "/assets/blog"
 collections:
   - name: "blog"
-    label: "blog"
+    label: "Blog"
     folder: "src/blog"
     create: true
     slug: {{year}}-{{month}}-{{day}}-{{slug}}
