@@ -6,16 +6,23 @@
   --fs-700: 2rem;
 
   --ff-body: "Roboto", sans-serif;
-  --ff-heading: "Playfair Display", serif;
+  --ff-heading: "Roboto", sans-serif;
 
   --fw-400: 400;
   --fw-700: 700;
   --fw-900: 900;
 
-  --clr-primary-200: hsla(169, 70%, 95%, 1);
-  --clr-primary-300: hsla(169, 100%, 39%, 1);
-  --clr-primary-400: hsla(169, 100%, 26%, 1);
-  --clr-primary-500: hsla(169, 100%, 16%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --antiflash-white: hsla(280, 7%, 95%, 1);
+  --gunmetal: hsla(180, 7%, 16%, 1);
+  --tomato: hsla(0, 99%, 64%, 1);
+  --xanthous: hsla(43, 90%, 54%, 1);
+
+
+  --clr-primary-200: var(--antiflash-white);
+  --clr-primary-300: var(--xanthous);
+  --clr-primary-400: var(--tomato);
+  --clr-primary-500: var(--gunmetal);
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-300: hsla(0, 0%, 50%, 1);
@@ -89,6 +96,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -213,6 +221,8 @@ section,
 .nav-list a {
   color: var(--clr-neutral-900);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .nav-list a:focus,
@@ -231,6 +241,7 @@ section,
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-500);
   text-align: center;
+
 }
 
 /* //////////////////////
