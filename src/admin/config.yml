@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/blogs" # Media files will be stored in the repo under images/uploads
-public_folder: "assets/blog"
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
 collections:
   - name: "blog"
     label: "Blog"
@@ -19,16 +19,24 @@ collections:
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-# collections:
-#   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-#     label: "Blog" # Used in the UI
-#     folder: "_posts/blog" # The path to the folder where the documents are stored
-#     create: true # Allow users to create new documents in this collection
-#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-#     fields: # The fields for each document, usually in front matter
-#       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-#       - {label: "Title", name: "title", widget: "string"}
-#       - {label: "Publish Date", name: "date", widget: "datetime"}
-#       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-#       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-#       - {label: "Body", name: "body", widget: "markdown"}
+
+#       backend:
+#   name: git-gateway
+#   branch: main
+#   media_folder: "public/assets/blog"
+#   public_folder: "/assets/blog"
+#   collections:
+#   - name: "blog"
+#     label: "Blog"
+#     folder: "src/blog"
+#     create: true
+#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+#     fields:
+#       - { label: "Title", name: "title", widget: "string" }
+#       - { label: "Description", name: "description", widget: "string" }
+#       - { label: "Author", name: "author", widget: "string" }
+#       - { label: "Date", name: "date", widget: "datetime" }
+#       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+#       - { label: "Featured Image", name: "image", widget: "image" }
+#       - { label: "Image caption", name: "imageAlt", widget: "string" }
+#       - { label: "Body", name: "body", widget: "markdown" }
