@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
@@ -5,8 +7,8 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
 
-  --ff-body: "Roboto", sans-serif;
-  --ff-heading: "Roboto", sans-serif;
+  --ff-body: "Inter", sans-serif;
+  --ff-heading: "Inter", sans-serif;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -30,6 +32,8 @@
   --clr-neutral-500: hsla(0, 0%, 60%, 1);
   --clr-neutral-900: hsla(0, 0%, 10%, 1);
 }
+
+
 
 @media (min-width: 35em) {
   :root {
