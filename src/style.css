@@ -151,6 +151,9 @@ section,
 }
 
 
+small {
+  color: darkgrey;
+}
 
 /* //////////////////////
   Utility Classes
@@ -221,7 +224,6 @@ section,
 .nav-list a {
   color: var(--clr-neutral-900);
   text-decoration: none;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
